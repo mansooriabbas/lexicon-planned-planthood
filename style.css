@@ -163,4 +163,68 @@ nav ul {
 .remove {
   grid-column: 4 / 8;
   grid-row: 8 / 8;
+  background-color: #b93857;
+  color: #ffffff;
+  width: 96.88px;
+  height: 30px;
+  border-radius: 9px;
+}
+
+.bottom_button-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 157px;
+    height: 63px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    background-color: #0a846e;
+  }
+}
+
+.bottom__text-container {
+  display: grid;
+  grid-template-columns: 75px repeat(11, 75px);
+  grid-template-rows: 75px repeat(5, 75px);
+  width: 911px;
+  margin: 0 auto;
+}
+
+.bottom__circle-container {
+  width: 377px;
+  height: 377px;
+  border-radius: 279px;
+  background-color: #0a846e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  grid-column: 8 / 10;
+  grid-row: 2 / 6;
+}
+
+.text-container__info-text {
+  grid-column: 2 / 8;
+  grid-row: 3 / 5;
+}
+
+.text-container__button {
+  grid-column: 2 / 6;
+  grid-row: 5/ 6;
+  width: 281px;
+  height: 63px;
+  border-radius: 8px;
+  border: 0;
+  background-color: #0a846e;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  margin-top: 10px;
 }
