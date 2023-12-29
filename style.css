@@ -66,9 +66,8 @@ nav ul {
 .main-top__content-box {
   display: grid;
   grid-template-columns: 75px repeat(11, 75px);
-  grid-template-rows: 75px repeat(11, 75px);
+  grid-template-rows: 75px repeat(5, 75px);
   width: 911px;
-  height: 377px;
   margin: 0 auto;
 }
 
@@ -100,4 +99,26 @@ nav ul {
 
   grid-column: 10 / 12;
   grid-row: 5 / 6;
+}
+.content-box__line {
+  background-color: #055647;
+  width: 303.24px;
+  height: 3px;
+  grid-column: 5 / 12;
+  grid-row: 7 / 8;
+}
+.main-mid__content-box {
+  display: grid;
+  grid-template-columns: 75px repeat(11, 75px);
+  grid-template-rows: 75px repeat(5, 75px);
+  width: 911px;
+  margin: 0 auto;
+}
+
+.main-mid__title-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
