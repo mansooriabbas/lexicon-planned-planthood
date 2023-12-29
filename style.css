@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.hero__box-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-image: url(assets/hand-plant.png);
+  background-size: cover;
+  /* grid */
+  display: grid;
+  place-items: center;
+}
+.hero__box-top-right {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-color: #9e6d52;
+  width: 500px;
+  height: 270px;
+  /* grid */
+  display: grid;
+  place-items: center;
+}
+.hero__box-bottom-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 2;
+  background-color: #0a846e;
+  width: 500px;
+  height: 270px;
+  /* grid */
+  display: grid;
+  place-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 60px;
+  margin: 0;
+  background-color: #ffffff;
+  list-style: none;
+  align-items: center;
+  box-shadow: #e6ebea 0px 4px 4px 0;
+}
