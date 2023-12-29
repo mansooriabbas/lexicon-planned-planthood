@@ -5,6 +5,7 @@ body {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hero {
@@ -227,4 +228,63 @@ nav ul {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   margin-top: 10px;
+}
+
+.footer {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 590px;
+  background-image: url(assets/hand-i-växter.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__container-left {
+  width: 504px;
+  height: 590px;
+  background-color: rgba(0, 0, 0, 0.79);
+  color: #ffffff;
+  /* grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.container-left__text-container {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-left__info {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px;
+}
+
+.footer__container-right {
+  height: 590px;
+  color: #ffffff;
+  /* grid */
+  display: grid;
+  place-items: center;
+}
+.footer__nav-container {
+  grid-column: 1 / 3;
+  grid-row: 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
