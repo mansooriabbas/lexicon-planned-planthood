@@ -448,3 +448,160 @@ nav ul {
     text-align: left;
   }
 }
+.mq-image-wrapper {
+  display: none;
+}
+.mq-wrapper {
+  display: none;
+}
+@media (max-width: 390px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .hero {
+    background-image: url(assets/hand-plant.png);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+  }
+  .hero__box-top-right,
+  .hero__box-bottom-right,
+  .hero__box-left {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+
+  .mq-wrapper {
+    width: 390px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  .logo {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .burger {
+    grid-column: 5 / 6;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .mq-image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brown-container {
+    background-color: #9e6d52;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 195px;
+    img {
+      width: 111.44px;
+      height: 124px;
+    }
+  }
+  .green-container {
+    background-color: #0a846e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 195px;
+
+    img {
+      width: 111.44px;
+      height: 124px;
+    }
+  }
+
+  .main-top__title-wrapper h1 {
+    font-family: Maven Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .main-top__content-box {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    width: 390px;
+    height: 500px;
+    margin: 0 auto;
+   
+  }
+
+  .content-box__circle-image {
+    width: 241px;
+    height: 241px;
+    grid-column: 1 / 6;
+    grid-row: 3;
+    margin: auto;
+    img {
+      width: 126px;
+      height: 124px;
+    }
+  }
+
+  .content-box__line {
+    display: grid;
+    width: 202px;
+    grid-column: 2 / 5;
+    grid-row: 7 / 7;
+    margin: auto;
+  }
+
+  .content-box__text-container {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    width: 100%;
+    h2 {
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .content-box__button {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    width: 98.63px;
+    height: 34.71px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 9px;
+    text-align: center;
+    margin: auto;
+  }
+}
