@@ -3,17 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="profile.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@300&family=Maven+Pro:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Profile</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        
         <img class="burger" src="assets/burgir.png" alt="" />
         <img class="logo" src="assets/Logo.svg" alt="" />
         <h4>Mina sidor</h4>
       </header>
+      <div class="form-container">
+        <h1>Lägg till ny plantering</h1>
+        <form>
+          <label class="plant" for="plant">Plant:</label>
+          <input type="text" id="plant" name="plant" />
+
+          <label class="date" for="date">Date:</label>
+          <input type="text" id="date" name="date" />
+
+          <button type="submit">LÄGG TILL</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
