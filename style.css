@@ -186,6 +186,16 @@ nav ul {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  .plant-left {
+    grid-column: 1 / 8;
+    margin: auto;
+  }
+
+  .plant-mid {
+    grid-column: 1 / 8;
+    margin: auto;
+  }
 }
 
 .bg-image {
@@ -789,7 +799,6 @@ nav ul {
     grid-template-rows: 1fr 1fr 1fr;
     grid-row: 2 / 3;
     background-color: rgba(0, 0, 0, 0.87);
-
 
     h1 {
       font-family: Maven Pro;
