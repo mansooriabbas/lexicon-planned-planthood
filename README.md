@@ -6,4 +6,4 @@ Våren nalkas och det är dags att börja planera sina planteringar! En kund har
 
 Kunden bor i ett kollektiv där de har en kolonilott på innergården och det kan lätt bli oordning bland odlingar och odlare. Därför efterfrågar de en lösning på detta!
 
-## Live page : https://mansooriabbas.github.io/lexicon-planned-planthood/
+Live page : https://mansooriabbas.github.io/lexicon-planned-planthood/
