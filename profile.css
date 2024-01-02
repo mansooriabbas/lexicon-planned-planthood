@@ -465,7 +465,7 @@ footer {
     }
     .plant {
       margin: auto;
-      grid-column: 2 / 4;
+      grid-column: 1 / 6;
       grid-row: 2 / 4;
       width: 149px;
       height: 205.57px;
