@@ -289,8 +289,12 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  /* Styles for screens between 768px and 1024px wide */
+.nav{
+  display: none;
+}
+
+@media (min-width: 391px)and (max-width: 1024px) {
+ 
 
   .wrapper {
     max-width: 1000px;
