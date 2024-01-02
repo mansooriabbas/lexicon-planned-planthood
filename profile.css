@@ -234,13 +234,12 @@ body {
 
 .bottom-grid {
   display: grid;
-  grid-template-columns: 10%repeat(9, 10%);
-  grid-template-rows: 10%repeat(9, 10%);
+  grid-template-columns: 10%repeat (9, 10%);
+  grid-template-rows: 10%repeat (9, 10%);
   place-items: center;
   height: 240px;
   width: 390px;
   background-color: rgba(158, 109, 82, 1);
- 
 }
 /* .top-left,
 .top-right,
@@ -248,28 +247,296 @@ body {
 .bottom-right {
  
 } */
-.top-left{
+.top-left {
   /* margin: auto; */
   grid-column: 1/ 6;
   grid-row: 1 / 7;
   margin-left: 10px;
-  
 }
-.top-right{
+.top-right {
   /* margin: auto; */
   grid-column: 6/ 11;
   grid-row: 1 / 7;
   margin-right: 10px;
 }
-.bottom-left{
+.bottom-left {
   /* margin: auto; */
   grid-column: 1 / 6;
   grid-row: 5 / 11;
   margin-left: 10px;
 }
-.bottom-right{
+.bottom-right {
   /* margin: auto; */
   grid-column: 6 / 11;
   grid-row: 5 / 11;
   margin-right: 10px;
+}
+
+footer {
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  h1 {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for screens between 768px and 1024px wide */
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .nav {
+    height: 60px;
+    display: flex;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      list-style: none;
+
+      font-family: Maven Pro;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  .header {
+    width: 1000px;
+    background-image: url(assets/hand-i-växter.png);
+    background-size: cover;
+    background-position: center;
+
+    .burger {
+      display: none;
+    }
+  }
+
+  .form-container {
+    grid-template-columns: 10% repeat(9, 10%);
+    grid-template-rows: 10% repeat(9, 10%);
+    margin: 0 auto;
+    width: 927px;
+    height: 500px;
+
+    h1 {
+      font-family: Open Sans;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      grid-column: 1 / 5;
+      margin-right: 40px;
+      margin-top: 50px;
+    }
+
+    form {
+      width: 927px;
+      height: 500px;
+      grid-template-columns: 10% repeat(9, 10%);
+      grid-template-rows: 10% repeat(9, 10%);
+      #plant {
+        grid-column: 1 / 6;
+        grid-row: 4 / 5;
+        width: 442px;
+        height: 45px;
+        margin: auto;
+      }
+
+      #date {
+        width: 442px;
+        height: 45px;
+        grid-column: 6 / 11;
+        grid-row: 4 / 5;
+        margin: auto;
+      }
+
+      .date {
+        margin: auto;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .plant {
+        margin: auto;
+        grid-column: 6 / 7;
+        grid-row: 3 / 4;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      button {
+        width: 192px;
+        height: 63px;
+        border-radius: 9px;
+        grid-column: 1 / 11;
+        margin: auto;
+      }
+    }
+  }
+
+  .bottom-container {
+    width: 1000px;
+    grid-template-columns: 10% repeat(9, 10%);
+    grid-template-rows: 10% repeat(9, 10%);
+    height: 1140px;
+
+    .container-title2 {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    .container-title {
+      font-family: Lato;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  .main-box {
+    width: 293.54px;
+    height: 407px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .bg-image {
+      grid-column: 1 / 8;
+      grid-row: 1 / 3;
+    }
+    .plant {
+      margin: auto;
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+      width: 149px;
+      height: 205.57px;
+    }
+    .title {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: 5px;
+    }
+
+    .date {
+      grid-column: 3 / 8;
+      grid-row: 7 / 8;
+
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: right;
+      margin-right: 5px;
+    }
+
+    .name {
+      grid-row: 8 / 8;
+      grid-column: 1 / 3;
+
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-left: 5px;
+    }
+
+    .remove {
+      grid-column: 3 / 7;
+      grid-row: 8 / 8;
+      background-color: #b93857;
+      color: #ffffff;
+      width: 96.88px;
+      height: 30px;
+      display: block;
+      border-radius: 9px;
+
+      margin-left: 12px;
+    }
+  }
+
+  .box3 {
+    grid-column: 4 / 10;
+  }
+  .bottom-grid {
+    margin-top: 50px;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+
+    img {
+      border: 15px solid rgba(158, 109, 82, 1);
+      border-top: 30px solid rgba(158, 109, 82, 1);
+      border-bottom: 30px solid rgba(158, 109, 82, 1);
+    }
+  }
+  .bottom-left,
+  .bottom-right,
+  .top-left,
+  .top-right {
+    margin: 0;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    h1 {
+      font-family: Open Sans;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 33px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
 }
